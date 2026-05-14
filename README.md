@@ -21,11 +21,11 @@ descifrador/
 
 ### Step 1 — Domain (~10 min)
 1. Go to namecheap.com or cloudflare.com/registrar
-2. Register: descifrador.com (or similar — check availability)
+2. Register: sopadepalabras.com (or similar — check availability)
 3. Cost: ~$10/year
 
 ### Step 2 — GitHub (~5 min)
-1. Create a new GitHub repo (e.g. `descifrador`)
+1. Create a new GitHub repo (e.g. `sopadepalabras`)
 2. Upload all files from this package, preserving folder structure
 3. Make repo public
 
