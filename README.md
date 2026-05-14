@@ -1,4 +1,4 @@
-# Descifrador 🐱 — Spanish Word Unscrambler
+# sopadepalabras 🐱 — Spanish Word Unscrambler
 
 ## Files in this package
 ```
