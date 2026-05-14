@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spanish-Speaking Countries — Sopa de Palabras</title>
+<meta name="description" content="Explore the 20 most common Spanish-speaking countries. Click each flag to visit the official tourism bureau. Learn Spanish through culture!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --tomato:#E8372A; --gold:#F5C842; --cream:#FDF8F0; --ink:#1A1208;
+  --ink2:#5C4A2A; --ink3:#9C8A6A; --card:#FFFFFF;
+  --border:rgba(26,18,8,0.10); --shadow:0 2px 16px rgba(26,18,8,0.08);
+  --r:14px; --font-display:'Playfair Display',Georgia,serif; --font-body:'DM Sans',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--cream);color:var(--ink);font-family:var(--font-body);min-height:100vh;}
+nav{background:var(--card);border-bottom:1px solid var(--border);padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;}
+.nav-brand{text-decoration:none;display:flex;align-items:center;gap:10px;}
+.nav-logo{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--tomato);}
+.nav-back{font-size:14px;font-weight:500;color:var(--ink2);text-decoration:none;padding:7px 14px;border:1px solid var(--border);border-radius:99px;transition:background 0.15s;}
+.nav-back:hover{background:var(--cream);}
+.hero{text-align:center;padding:52px 24px 40px;max-width:700px;margin:0 auto;}
+.hero-icon{font-size:56px;margin-bottom:16px;display:block;}
+.hero h1{font-family:var(--font-display);font-size:clamp(28px,5vw,44px);font-weight:700;margin-bottom:12px;line-height:1.15;}
+.hero h1 em{font-style:italic;color:var(--tomato);}
+.hero p{font-size:16px;color:var(--ink2);line-height:1.6;max-width:480px;margin:0 auto;}
+.alpha-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:6px;padding:0 24px 32px;max-width:700px;margin:0 auto;}
+.alpha-letter{font-size:13px;font-weight:600;padding:5px 12px;border-radius:99px;background:var(--card);border:1px solid var(--border);color:var(--ink2);text-decoration:none;transition:all 0.15s;}
+.alpha-letter:hover,.alpha-letter.active{background:var(--tomato);color:white;border-color:var(--tomato);}
+.countries-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px;max-width:1000px;margin:0 auto;padding:0 24px 60px;}
+.country-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;text-decoration:none;color:var(--ink);transition:all 0.2s;display:flex;flex-direction:column;padding:20px;align-items:center;text-align:center;}
+.country-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(26,18,8,0.14);border-color:var(--tomato);}
+.flag{font-size:52px;line-height:1;margin-bottom:12px;display:block;}
+.country-name{font-size:15px;font-weight:600;margin-bottom:4px;}
+.country-sub{font-size:12px;color:var(--ink3);margin-bottom:10px;}
+.visit-pill{font-size:11px;font-weight:600;color:var(--tomato);background:#FEF2F1;padding:4px 10px;border-radius:99px;border:1px solid rgba(232,55,42,0.2);}
+.country-card:hover .visit-pill{background:var(--tomato);color:white;}
+.section-letter{font-family:var(--font-display);font-size:32px;font-weight:700;color:var(--tomato);max-width:1000px;margin:0 auto 16px;padding:0 24px;opacity:0.35;}
+footer{background:var(--ink);color:rgba(255,255,255,0.4);padding:28px 24px;text-align:center;font-size:13px;}
+footer a{color:rgba(255,255,255,0.45);text-decoration:none;margin:0 10px;}
+footer a:hover{color:white;}
+</style>
+</head>
+<body>
+<nav>
+  <a href="/index.html" class="nav-brand">
+    <span style="font-size:24px;">🍲</span>
+    <span class="nav-logo">Sopa de Palabras</span>
+  </a>
+  <a href="/index.html" class="nav-back">← Back to puzzle</a>
+</nav>
+
+<header class="hero">
+  <span class="hero-icon">🌎</span>
+  <h1>The Spanish-Speaking <em>World</em></h1>
+  <p>20 nations. 500 million speakers. One beautiful language. Click any flag to visit the official tourism bureau and start planning your next adventure.</p>
+</header>
+
+<div class="alpha-nav" id="alphaNav">
+  <a href="#A" class="alpha-letter">A</a>
+  <a href="#B" class="alpha-letter">B</a>
+  <a href="#C" class="alpha-letter">C</a>
+  <a href="#D" class="alpha-letter">D</a>
+  <a href="#E" class="alpha-letter">E</a>
+  <a href="#G" class="alpha-letter">G</a>
+  <a href="#H" class="alpha-letter">H</a>
+  <a href="#M" class="alpha-letter">M</a>
+  <a href="#N" class="alpha-letter">N</a>
+  <a href="#P" class="alpha-letter">P</a>
+  <a href="#U" class="alpha-letter">U</a>
+  <a href="#V" class="alpha-letter">V</a>
+</div>
+
+<main id="main"></main>
+
+<footer>
+  <span>© 2025 Sopa de Palabras 🍲</span><br><br>
+  <a href="/index.html">Home</a>
+  <a href="/pages/word-lists.html">Word Lists</a>
+  <a href="/pages/privacy.html">Privacy Policy</a>
+  <a href="/pages/contact.html">Contact</a>
+</footer>
+
+<script>
+const COUNTRIES = [
+  {name:"Argentina", flag:"🇦🇷", capital:"Buenos Aires", tourism:"https://www.argentina.travel/en"},
+  {name:"Bolivia",   flag:"🇧🇴", capital:"Sucre",        tourism:"https://www.bolivia.travel"},
+  {name:"Chile",     flag:"🇨🇱", capital:"Santiago",     tourism:"https://www.chile.travel/en"},
+  {name:"Colombia",  flag:"🇨🇴", capital:"Bogotá",       tourism:"https://colombia.travel/en"},
+  {name:"Costa Rica",flag:"🇨🇷", capital:"San José",     tourism:"https://www.visitcostarica.com"},
+  {name:"Cuba",      flag:"🇨🇺", capital:"Havana",       tourism:"https://www.cubatravel.cu"},
+  {name:"Dominican Republic",flag:"🇩🇴",capital:"Santo Domingo",tourism:"https://www.godominicanrepublic.com"},
+  {name:"Ecuador",   flag:"🇪🇨", capital:"Quito",        tourism:"https://www.ecuador.travel/en"},
+  {name:"El Salvador",flag:"🇸🇻",capital:"San Salvador", tourism:"https://elsalvador.travel"},
+  {name:"Guatemala", flag:"🇬🇹", capital:"Guatemala City",tourism:"https://visitguatemala.com"},
+  {name:"Honduras",  flag:"🇭🇳", capital:"Tegucigalpa",  tourism:"https://www.honduras.travel"},
+  {name:"Mexico",    flag:"🇲🇽", capital:"Mexico City",  tourism:"https://www.visitmexico.com"},
+  {name:"Nicaragua", flag:"🇳🇮", capital:"Managua",      tourism:"https://www.visitnicaragua.us"},
+  {name:"Panama",    flag:"🇵🇦", capital:"Panama City",  tourism:"https://www.visitpanama.com"},
+  {name:"Paraguay",  flag:"🇵🇾", capital:"Asunción",     tourism:"https://www.senatur.gov.py"},
+  {name:"Peru",      flag:"🇵🇪", capital:"Lima",         tourism:"https://www.peru.travel/en"},
+  {name:"Spain",     flag:"🇪🇸", capital:"Madrid",       tourism:"https://www.spain.info/en"},
+  {name:"Uruguay",   flag:"🇺🇾", capital:"Montevideo",   tourism:"https://turismo.gub.uy/en"},
+  {name:"USA (Hispanic)",flag:"🇺🇸",capital:"Washington D.C.",tourism:"https://www.visittheusa.com"},
+  {name:"Venezuela", flag:"🇻🇪", capital:"Caracas",      tourism:"https://www.venezolana.gob.ve"},
+].sort((a,b)=>a.name.localeCompare(b.name));
+
+const main = document.getElementById('main');
+let currentLetter = '';
+
+COUNTRIES.forEach(c => {
+  const letter = c.name[0].toUpperCase();
+  if (letter !== currentLetter) {
+    currentLetter = letter;
+    const lbl = document.createElement('div');
+    lbl.className = 'section-letter';
+    lbl.id = letter;
+    lbl.textContent = letter;
+    main.appendChild(lbl);
+    const grid = document.createElement('div');
+    grid.className = 'countries-grid';
+    grid.id = 'grid-' + letter;
+    main.appendChild(grid);
+  }
+  const grid = document.getElementById('grid-' + letter);
+  const card = document.createElement('a');
+  card.className = 'country-card';
+  card.href = c.tourism;
+  card.target = '_blank';
+  card.rel = 'noopener noreferrer';
+  card.setAttribute('aria-label', `Visit ${c.name} tourism website`);
+  card.innerHTML = `
+    <span class="flag">${c.flag}</span>
+    <span class="country-name">${c.name}</span>
+    <span class="country-sub">${c.capital}</span>
+    <span class="visit-pill">Visit Tourism Site →</span>
+  `;
+  grid.appendChild(card);
+});
+</script>
+</body>
+</html>
